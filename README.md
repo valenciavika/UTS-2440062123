@@ -8,7 +8,7 @@ Frameworks Used
 
 Description
 --------------------------------------
-Program starbuck dibuat dengan menggunakan CSS framework Tailwind. Untuk screenshot/video/penjelasan tertera pada jawaban. Tolong ikuti langkah berikut jika ingin menjalankan codenya.
+Program starbuck dibuat dengan menggunakan CSS framework Tailwind. Untuk screenshot/video/penjelasan tertera pada jawaban. Tolong ikuti langkah berikut jika ingin menjalankan codenya. Ada sedikit bug dari tailwind untuk custom color pada saat pertama kali menjalankan karena css harus direfresh setiap saat. Jadi untuk mentrigger warnanya bisa dengan mengubah salah satu text-{{$u['colorCode'}} dan bg-{{$u['colorCode'}} menjadi bg/text-goldLevel atau bg/text-greenLevel kemudian mengubahnya kembali ke text-{{$u['colorCode'}} dan bg-{{$u['colorCode'}} saat warna sudah muncul.
 (Simulasi & penjelasan UI: https://youtu.be/4Rg3hEjplbY)
 (Penjelasan Code: https://youtu.be/gjOzmbDSPfo)
 
