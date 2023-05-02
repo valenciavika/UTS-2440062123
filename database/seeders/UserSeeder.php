@@ -17,15 +17,17 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             [
                 'name' => 'Mr. Vico Lomar',
-                'loyalty' => 'gold',
-                'colorCode' => '#C6A961',
+                'loyalty' => 'Gold',
+                'colorCode' => 'goldLevel',
                 'point' => 151,
+                'code' => '#C6A961',
             ],
             [
-                'name' => 'Ms. Fei Li',
-                'loyalty' => 'green',
-                'colorCode' => '#006F42',
+                'name' => 'Ms. Fei Fei Li',
+                'loyalty' => 'Green',
+                'colorCode' => 'greenLevel',
                 'point' => 0,
+                'code' => '#006F42'
             ],
         ]);
 

@@ -13,17 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-// use App\Http\Controllers\userController;
-// Route::get('/{id}', [usercontroller::class, 'user']);
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+use App\Http\Controllers\userController;
+Route::get('/{id}', [usercontroller::class, 'index']);
 // use App\Http\Controllers\coffeecontroller;
 // Route::get('/coffee/{id}', [coffeecontroller::class, 'coffee']);
 
 use App\Http\Controllers\ccontroller;
-Route::get('/coffee/{id}', [ccontroller::class, 'index']);
+Route::get('/coffee/{use}/{id}', [ccontroller::class, 'index']);
 
 use App\Http\Controllers\transactionController;
-Route::get('/transaction', [transactionController::class, 'index'])->name('transactions.index');
-Route::get('/coffee/buy/{coffee}', [ccontroller::class, 'buy'])->name('coffee.buy');
+Route::get('/transaction/{id}', [transactionController::class, 'index'])->name('transactions.index');
+Route::get('/coffee/buy/{coffee}/{user}', [ccontroller::class, 'buy'])->name('coffee.buy');

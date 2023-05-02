@@ -2,15 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.foot{
-    background-color: #C6A961;
+.promo{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
-.float{
-	box-shadow: 2px 2px 3px #999;
+
+.promo img{
+    width: 100%;
 }
 
-.my-float{
-	margin-top:22px;
+
+
+.promo-button{
+    cursor: pointer;
+    padding: 40px;
+}
+
+#left{
+    width: 2%;
+    position: absolute;
+    left: 0;
+}
+
+#right{
+    width: 2%;
+    position: absolute;
+    right: 0;
+}
+
+.promo-container img{
+    display: flex;
 }

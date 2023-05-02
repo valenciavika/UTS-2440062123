@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/db7406598f.js" crossorigin="anonymous"></script>
     @vite('resources/css/app.css')
 </head>
 <body>
-    <header class="bg-gray-100">
-        <div class ="sticky top-0 py-2 px-5 shadow-md shadow-gray-400">
+    <div class="sticky bg-gray-100 top-0">
+        <div class ="top-0 py-2 px-5 shadow-md shadow-gray-400">
             <div class="text-xl font-sans flex items-center justify-between">
                  <div class="font-bold ">
                     <h2 id="greet"></h2>
-                    <h2>@yield('namaUser')</h2>
+                    @yield('namaUser')
                 </div>
-                <p class="text-goldLevel">Gold Level</p>
-
+                    @yield('level')
             </div>
-
-
             @yield('header')
 
         </div>
-    </header>
+    </div>
 
     @yield('konten')
 
-    @include('footer')
+    @yield('footer')
 </body>
+
 
 <script>
     var myDate = new Date();

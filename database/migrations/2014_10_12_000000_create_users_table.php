@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('loyalty');
             $table->unsignedBigInteger('point');
             $table->string('colorCode');
+            $table->string('code');
             $table->timestamps();
         });
     }

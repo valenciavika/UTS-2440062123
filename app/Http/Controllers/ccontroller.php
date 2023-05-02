@@ -9,32 +9,31 @@ use App\Models\transaction;
 
 class ccontroller extends Controller
 {
-    public function index($id)
+    public function index($use, $id)
     {
         $coffees = Coffee::all();
-
-        return view('coffee', ['id' => $id, 'coffee' => $coffees]);
+        $user = User::all();
+        return view('coffee', ['use' => $use, 'id' => $id, 'coffee' => $coffees, 'user'=>$user]);
     }
 
-    public function buy(Coffee $coffee)
+    public function buy(Coffee $coffee, $use)
     {
-        $user = User::first();
+        $userr = User::find($use);
         $price = $coffee->price;
 
         // Check user loyalty status
-        if ($user->loyalty_level === 'Gold') {
+        if ($userr->loyalty_level === 'Gold') {
             $price = $price * 0.9;
         }
 
-        // Create a transaction history record
-        $user->transactions()->create([
+        $userr->transactions()->create([
             'coffee_id' => $coffee->id,
+            'user_id' => $use,
             'price' => $price,
             'date' => now(),
         ]);
-        return redirect()->route('transactions.index')->with('success', 'Transaction successful!');
+        return redirect()->route('transactions.index', $use)->with('success', 'Transaction successful!');
     }
-
 
 }
 
