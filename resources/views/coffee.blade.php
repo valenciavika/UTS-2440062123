@@ -10,7 +10,7 @@
     </div>
     <div class="flex pb-2">
         <img class="nav w-6 mr-2" src="{{url('/images/email.png')}}" alt="">
-        <a class = "" href="/vika">Transaction</a>
+        <a class = "" href="/transaction">Transaction</a>
     </div>
 
 </div>
@@ -53,15 +53,16 @@
 </div>
 
 <div class="p-4">
-    @foreach ($user as $u)
+    @foreach ($coffee as $u)
         @if($u['key']==$id)
             <div class="">
-                <div class="border-b border-black flex py-2" onclick="return confirm('Are you sure you want to buy 1 {{$u['name']}}?')">
+                <div class="border-b border-black flex py-2">
                     <img src={{$u['src']}} class="w-1/3" alt="">
-                    <div class=" flex flex-col self-end px-2">
-                        <p>Price: {{$u['num']}}</p>
+                    <div class="w-1/2 flex flex-col self-end px-2">
+                        <p>Price: Rp{{$u['num']}}</p>
                         <p class="font-medium text-lg">{{$u['name']}}</p>
                     </div>
+                    <a href="{{ route('coffee.buy', $u->id) }}" class="w-1/6 bg-goldLevel flex self-end items-center font-bold justify-center text-white py-1 px-2 rounded-lg" onclick="return confirm('Are you sure you want to buy 1 {{$u['name']}}?')">BUY</a>
                 </div>
 
             </div>

@@ -10,7 +10,7 @@
     </div>
     <div class="flex pb-2">
         <img class="nav w-6 mr-2" src="{{url('/images/email.png')}}" alt="">
-        <a class = "" href="/vika">Transaction</a>
+        <a class = "" href="/transaction">Transaction</a>
     </div>
 
 </div>
@@ -55,9 +55,9 @@
                 <p class="text-sm">Thirsty for a great deal? Get 30% off on a purchase on tumber! Hurry, limited time offer only. Order now and enjoy your favoite drinks in style.</p>
             </div>
         </div>
-
+<a href="/coffee/1" class="fixed bg-goldLevel text-white text-center float px-3 py-2 rounded-lg font-medium text-lg bottom-16 right-6">Coffee</a>
     </div>
-    <a href="/coffee/1" class="fixed bg-goldLevel text-white text-center float px-3 py-2 rounded-lg font-medium text-lg bottom-16 right-6">Coffee</a>
+
 </div>
 
 @endsection
