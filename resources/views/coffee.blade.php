@@ -32,28 +32,28 @@
             <button type="button" onclick="window.location='{{ url("coffee/$use/1")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg text-white bg-black">Signature</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/2")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Espresso</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/3")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Brewed</button>
-            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg">Blender Coffee</button>
+            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg">Blended Coffee</button>
         </div>
     @elseif ($id == 2)
         <div class="">
             <button type="button" onclick="window.location='{{ url("coffee/$use/1")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Signature</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/2")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg text-white bg-black">Espresso</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/3")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Brewed</button>
-            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg">Blender Coffee</button>
+            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg">Blended Coffee</button>
         </div>
     @elseif ($id == 3)
         <div class="">
             <button type="button" onclick="window.location='{{ url("coffee/$use/1")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Signature</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/2")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Espresso</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/3")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg text-white bg-black">Brewed</button>
-            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg">Blender Coffee</button>
+            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg">Blended Coffee</button>
         </div>
     @elseif ($id == 4)
         <div class="">
             <button type="button" onclick="window.location='{{ url("coffee/$use/1")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Signature</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/2")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg">Espresso</button>
             <button type="button" onclick="window.location='{{ url("coffee/$use/3")}}'" class="border-black border-2 py-1 px-2 mr-4 font-bold text-lg ">Brewed</button>
-            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg text-white bg-black">Blender Coffee</button>
+            <button type="button" onclick="window.location='{{ url("coffee/$use/4")}}'" class="border-black border-2 py-1 px-2 mt-4 font-bold text-lg text-white bg-black">Blended Coffee</button>
         </div>
     @endif
 
